@@ -80,7 +80,7 @@ NET_IFACE=$(route 2>/dev/null | grep -m 1 '^default' | grep -o '[^ ]*$')
 
 mkdir -p /opt/src
 vpn_env="/opt/src/vpn.env"
-vpn_env_dir="/opt/src/env/vpn.env"
+vpn_env_dir="/opt/env/vpn.env"
 if [ -f "$vpn_env_dir" ]; then
   vpn_env="$vpn_env_dir"
 fi
