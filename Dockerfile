@@ -11,6 +11,7 @@ FROM alpine:3.20
 
 ENV SWAN_VER=5.0
 WORKDIR /opt/src
+RUN mkdir /opt/env
 
 RUN set -x \
     && apk add --no-cache \
